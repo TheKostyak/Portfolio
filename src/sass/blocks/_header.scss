@@ -1,0 +1,51 @@
+.nav {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    &__logo {
+        position: relative;
+        font-size: 44px;
+        color: $bright-color;
+        z-index: 2;
+        transition: transform 1s;
+        &::before {
+            position: absolute;
+            content: '';
+            width: 200%;
+            height: 100%;
+            border: 1px solid $bright-color;
+            border-radius: 50%;
+            left: -50%;
+        }
+        &:hover {
+            transform: rotate(360deg);
+        }
+    }
+    &__links {
+        width: 50%;
+        list-style-type: none;
+        font-size: 18px;
+        color: $bright-color;
+        display: flex;
+        justify-content: space-between;
+        li {
+            position: relative;
+            &::after {
+                position: absolute;
+                content: '';
+                width: 0;
+                height: 3px;
+                background-color: $light-line;
+                bottom: -10px;
+                left: 0;
+                transition: width .5s;
+            }
+            &:hover {
+                &::after {
+                    width: 105%;
+                }
+            }
+        }
+    }
+}

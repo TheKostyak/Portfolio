@@ -1,0 +1,18 @@
+.promo {
+    margin: 0 auto;
+    padding: 0 250px;
+    margin-top: 150px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    h1 {
+        font-size: 64px;
+        color: $bright-color;
+        text-align: center;
+    }
+    &__photo {
+        width: 400px;
+        height: 540px;
+        border: 4mm ridge $bright-color;
+    }
+}
