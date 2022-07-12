@@ -14,10 +14,17 @@ img {
     height: 100%;
 }
 
+.title {
+    color: $bright-color;
+    font-size: 36px;
+    font-weight: 800;
+}
+
 .container {
-    padding: 0 250px;
+    width: 80%;
     margin: 0 auto;
 }
 
 @import 'blocks/header';
 @import 'blocks/promo';
+@import 'blocks/skills'
