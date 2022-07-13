@@ -1,12 +1,16 @@
-.nav {
-    width: 80%;
-    height: 80px;
+.header {
+    width: 100%;
+    z-index: 20;
     position: fixed;
+    background-color: $background-color;
+    top: 0;
+}
+
+.nav {
+    height: 80px;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: $background-color;
-    top: 0;
     &__logo {
         position: relative;
         font-size: 44px;

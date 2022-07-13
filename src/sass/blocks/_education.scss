@@ -1,0 +1,57 @@
+.education {
+    min-height: 800px;
+    &__wrapper {
+        margin-top: 50px;
+        display: grid;
+        grid-template-columns: repeat(2, 490px);
+        justify-content: space-around;
+        row-gap: 50px;
+    }
+    &__title {
+        text-align: center;
+    }
+    &__item {
+        width: 450px;
+        background-color: $bright-color;
+        border-radius: 16px;
+        padding: 20px;
+        &_icon {
+            position: relative;
+            width: 30px;
+            height: 30px;
+            z-index: 2;
+            padding: 20px 0 0 25px;
+            &::before {
+                position: absolute;
+                left: 5px;
+                top: 5px;
+                content: "";
+                width: 40px;
+                height: 40px;
+                background-color: $second-color;
+                border-radius: 50%;
+                z-index: -1;
+            }
+        }
+        &_head {
+            display: flex;
+            align-items: center;
+        }
+        &_title {
+            margin-left: 15px;
+            font-weight: 800;
+            font-size: 24px;
+            text-transform: uppercase;
+        }
+        &_body {
+            margin-top: 20px;
+        }
+        &_period {
+            font-size: 14px;
+            opacity: .7;
+        }
+        &_descr {
+            margin-top: 5px;
+        }
+    }
+}

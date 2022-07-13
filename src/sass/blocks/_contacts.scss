@@ -1,0 +1,20 @@
+.contacts {
+    min-height: 800px;
+    &__wrapper {
+        margin-top: 150px;
+    }
+    &__title {
+        text-align: center;
+    }
+    &__item {
+        display: flex;
+        height: 100px;
+        color: $bright-color;
+        &_title {
+            width: 70px;
+        }
+        &_descr {
+            margin-left: 20px;
+        }
+    }
+}
