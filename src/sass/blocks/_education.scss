@@ -5,7 +5,7 @@
         display: grid;
         grid-template-columns: repeat(2, 490px);
         justify-content: space-around;
-        row-gap: 50px;
+        gap: 50px;
     }
     &__title {
         text-align: center;

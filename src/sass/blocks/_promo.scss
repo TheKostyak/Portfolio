@@ -1,16 +1,24 @@
 .promo {
     height: 100vh;
     display: flex;
-    justify-content: space-around;
     align-items: center;
+    &__wrapper {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
     h1 {
         font-size: 64px;
         color: $bright-color;
         text-align: center;
     }
     &__photo {
-        width: 400px;
-        height: 540px;
+        position: relative;
         border: 4mm ridge $bright-color;
+        width: 450px;
+        height: 600px;
+    }
+    .my-photo {
+        position: absolute;
     }
 }

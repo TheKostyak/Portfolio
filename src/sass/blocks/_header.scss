@@ -20,11 +20,11 @@
         &::before {
             position: absolute;
             content: '';
-            width: 200%;
+            width: 250%;
             height: 100%;
             border: 1px solid $bright-color;
             border-radius: 50%;
-            left: -50%;
+            left: -70%;
         }
         &:hover {
             transform: rotate(360deg);
@@ -68,5 +68,8 @@
         &:hover {
             transform: scale(1.1);
         }
+    }
+    &__burger {
+        display: none;
     }
 }

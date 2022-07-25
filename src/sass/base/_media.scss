@@ -1,0 +1,39 @@
+@media (max-width: 1200px) {}
+
+@media (max-width: 991px) {
+    .promo {
+        &__wrapper {
+            display: block;
+        }
+        &__photo {
+            margin: 0 auto;
+            margin-top: 50px;
+        }
+    }
+}
+
+@media (max-width: 768px) {
+    .nav {
+        &__links,
+        &__btn {
+            display: none;
+        }
+        &__burger {
+            width: 40px;
+            height: 40px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: space-evenly;
+            span {
+                display: block;
+                width: 100%;
+                height: 3px;
+                background-color: #fff;
+                transition: transform .5s;
+            }
+        }
+    }
+}
+
+@media (max-width: 576px) {}

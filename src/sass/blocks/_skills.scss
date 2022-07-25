@@ -2,6 +2,13 @@
     margin-top: 100px;
     min-height: 800px;
     color: $bright-color;
+    &__items {
+        margin-top: 50px;
+        display: grid;
+        grid-template-columns: repeat(3, 250px);
+        grid-template-rows: repeat(2, minmax(auto, 200px));
+        grid-gap: 20px;
+    }
     &__wrapper {
         display: flex;
         justify-content: space-between;
@@ -17,8 +24,8 @@
             justify-content: center;
             align-items: center;
             flex-direction: column;
-            width: 240px;
-            height: 200px;
+            // width: 240px;
+            // height: 200px;
             padding: 10px 0;
             background-color: rgb(231, 230, 230);
             color: #000;
@@ -42,12 +49,5 @@
         height: 40px;
         background-color: rgb(231, 230, 230);
         border-radius: 10px;
-    }
-    &__items {
-        margin-top: 50px;
-        display: grid;
-        grid-template-columns: repeat(3, minmax(auto, 400px));
-        grid-template-rows: repeat(2, minmax(auto, 200px));
-        grid-gap: 20px;
     }
 }

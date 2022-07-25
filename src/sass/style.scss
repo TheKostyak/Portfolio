@@ -1,3 +1,4 @@
+@import 'libs/bootstrap-reboot.min';
 @import 'base/variables';
 html {
     background-color: $background-color;
@@ -30,3 +31,5 @@ img {
 @import 'blocks/skills';
 @import 'blocks/education';
 @import 'blocks/contacts';
+@import 'blocks/footer';
+@import 'base/media';
